@@ -1,0 +1,84 @@
+.takeaway {
+  background-color: #35B8BE;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 477px;
+}
+
+.delivery .row {
+  display: flex;
+}
+
+.freshproduct .container {
+  display: flex;
+}
+
+.choices {
+  text-align: center;
+}
+
+.choices ul {
+  display: flex;
+}
+
+.menu {
+  text-align: center;
+}
+
+.rows ul {
+  /*может возможно их поставить в 2 ряда по 3 строки без diva row?*/
+  display: flex;
+}
+
+/*и вообще просмотреть этот код в html, все ли там красиво.section menu*/
+
+.faq .container {
+  display: flex;
+}
+
+.phone .container {
+  display: flex;
+}
+
+.finish .container {
+  display: flex;
+}
+
+.finish .column {
+  background-image: url(img/finish-second.jpg);
+}
+
+footer {
+  background-image: url(img/footer-img.jpg);
+}
+
+footer .allinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .right-footer {
+  display: flex;
+}
+
+.networks {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* как поставить их по разным углам?*/
