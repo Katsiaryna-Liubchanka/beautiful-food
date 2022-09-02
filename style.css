@@ -1,84 +1,391 @@
+:root {
+  --color: #08090A;
+  --weak-color: #546285;
+  --accent-color: #35B8BE;
+  --serif: 'Inter', sans-serif;
+}
+
 .takeaway {
   background-color: #35B8BE;
   display: flex;
   justify-content: center;
+  font-family: var(--serif);
+  font-size: 14px;
+  color: white;
+}
+
+.takeaway button {
+  background-color: var(--accent-color);
+  font-family: var(--serif);
+  font-size: 14px;
+  color: white;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
 }
 
 header ul {
   display: flex;
   justify-content: space-between;
   width: 477px;
+  align-items: center;
+}
+
+header li {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--color);
+}
+
+header li:hover {
+  color: var(--accent-color);
+}
+
+header li button {
+  background-color: white;
+}
+
+.delivery .container {
+  height: 820px;
+  background-image: url(img/delivery-background.svg);
 }
 
 .delivery .row {
   display: flex;
 }
 
+.delivery h2 {
+  font-family: var(--serif);
+  font-size: 60px;
+  max-width: 68%;
+  color: var(--color);
+}
+
+
+.delivery h2 span {
+  color: var(--accent-color);
+}
+
+.delivery p {
+  font-family: var(--serif);
+  color: var(--weak-color);
+  font-size: 18px;
+  max-width: 65%;
+}
+
+.delivery button {
+  padding: 19px 35px 21px 35px;
+  background-color: #35B8BE;
+  border-radius: 6px;
+  color: white;
+}
+
 .freshproduct .container {
   display: flex;
+  background-image: url(img/freshproduct-background.svg);
+}
+
+.freshproduct h2 {
+  font-family: var(--serif);
+  font-size: 51px;
+  color: var(--accent-color);
+  max-width: 40%;
+}
+
+.freshproduct p {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--weak-color);
+  max-width: 50%;
+}
+
+.freshproduct button {
+  padding: 19px 35px 21px 35px;
+  background-color: #35B8BE;
+  border-radius: 6px;
+  color: white;
 }
 
 .choices {
   text-align: center;
 }
 
+.choices h3 {
+  font-family: var(--serif);
+  font-size: 50px;
+  color: var(--accent-color);
+}
+
 .choices ul {
   display: flex;
+}
+
+.choice h4 {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--color);
+}
+
+.choice p {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--weak-color);
+  max-width: 60%;
+  margin: auto;
 }
 
 .menu {
   text-align: center;
 }
 
-.rows ul {
-  /*может возможно их поставить в 2 ряда по 3 строки без diva row?*/
+.menu .container {
+  background-image: url(img/menu-background.svg);
+}
+
+.menu h2 {
+  font-family: var(--serif);
+  font-size: 50px;
+  color: var(--accent-color);
+}
+
+.menu p {
+  margin: auto;
+}
+
+.menu ul {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li {
+  border: 1px solid #DDDDDD;
+  display: flex;
+  border-radius: 5px;
+}
+
+
+.menu .image {
+  width: 120px;
+  height: 120px;
+}
+
+.menu .name {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.menu h5 {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--weak-color);
+}
+
+
+.menu h6 {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--accent-color);
+}
+
+.menu p {
+  font-family: var(--serif);
+  font-size: 16px;
+  color: var(--weak-color);
+  max-width: 70%;
+}
+
+.menu .form {
   display: flex;
 }
 
-/*и вообще просмотреть этот код в html, все ли там красиво.section menu*/
+.menu input {
+  height: 45px;
+  width: 60px;
+  border-radius: 6px;
+}
+
+.menu li button {
+  padding: 8px 10px 12px 10px;
+  background-color: #35B8BE;
+  color: black;
+  border-radius: 6px;
+}
+
+.menu button {
+  color: white;
+  background-color: #35B8BE;
+  padding: 20px 35px;
+  border-radius: 6px;
+}
+
+.start p {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--weak-color);
+  max-width: 35%;
+}
+
+.start button {
+  padding: 16px 46px;
+  background-color: #35B8BE;
+  border-radius: 6px;
+}
+
+.row li {
+  width: 580px;
+}
+
+.rows ul {
+  display: flex;
+}
 
 .faq .container {
   display: flex;
+}
+
+.faq h2 {
+  font-family: var(--serif);
+  font-size: 50px;
+  color: var(--accent-color);
+  max-width: 57%;
+}
+
+.faq p {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--weak-color);
+  max-width: 60%;
+}
+
+.faq button {
+  padding: 19px 35px 21px 35px;
+  background-color: #35B8BE;
+  border-radius: 6px;
+  color: white;
 }
 
 .phone .container {
   display: flex;
 }
 
+.phone h2 {
+  font-family: var(--serif);
+  font-size: 55px;
+  color: var(--accent-color);
+  max-width: 55%;
+}
+
+.phone p {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--weak-color);
+  max-width: 55%;
+}
+
+.phone button {
+  padding: 19px 35px 21px 35px;
+  background-color: #35B8BE;
+  border-radius: 6px;
+  color: white;
+}
+
 .finish .container {
   display: flex;
+  justify-content: space-around;
 }
 
 .finish .column {
   background-image: url(img/finish-second.jpg);
+  height: 666px;
+  width: 640px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.finish h3 {
+  font-family: var(--serif);
+  font-size: 53px;
+  color: white;
+  max-width: 80%;
+  padding-top: 17px;
+  margin: auto;
+}
+
+.finish h3 span {
+  color: #1B9097;
+}
+
+.finish button {
+  padding: 19px 35px 21px 35px;
+  background-color: white;
+  border-radius: 6px;
+  color: var(--accent-color);
+  margin: auto;
+
 }
 
 footer {
   background-image: url(img/footer-img.jpg);
+  height: 593px;
 }
 
 footer .allinfo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+footer p {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--weak-color);
 }
 
 footer .right-footer {
   display: flex;
+  justify-content: space-around;
+}
+
+footer .column {
+  width: 190px;
+}
+
+footer .column h4 {
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--color);
+}
+
+footer hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: #A6A4A4;
+  opacity: 0.2;
 }
 
 .networks {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 1200px;
 }
 
-/* как поставить их по разным углам?*/
+
+.delivery {}
+
+.container {}
+
+.row {}
+
+.column {}
