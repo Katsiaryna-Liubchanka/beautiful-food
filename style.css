@@ -29,6 +29,10 @@
   color: white;
 }
 
+.takeaway button:hover {
+  color: var(--color);
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -121,6 +125,10 @@ header li:hover {
   margin-bottom: 30px;
 }
 
+.delivery button:hover {
+  color: var(--color);
+}
+
 .freshproduct {
   width: 1440px;
   height: 894px;
@@ -168,6 +176,10 @@ header li:hover {
   line-height: 20px;
 }
 
+.freshproduct button:hover {
+  color: var(--color);
+}
+
 .freshproduct img {
   padding-right: 27px;
 }
@@ -175,6 +187,10 @@ header li:hover {
 .choices {
   text-align: center;
   margin-bottom: 105px;
+}
+
+.choices .container {
+  position: relative;
 }
 
 .choices h3 {
@@ -209,6 +225,17 @@ header li:hover {
   color: var(--weak-color);
   max-width: 75%;
   margin: auto;
+}
+
+.choices hr {
+  position: absolute;
+  width: 1090px;
+  height: 1px;
+  background: #D1CDCD;
+  border: none;
+  top: 269px;
+  right: 30px;
+  z-index: -1;
 }
 
 .menu {
@@ -257,6 +284,11 @@ header li:hover {
   color: white;
 }
 
+.menu .start button p:hover {
+  background-color: #1B9097;
+  color: var(--color);
+}
+
 .menu .start button {
   padding: 0;
   margin-top: 40px;
@@ -266,42 +298,61 @@ header li:hover {
 
 .menu ul {
   display: flex;
-  background-color: white;
   justify-content: center;
   gap: 20px;
 }
 
 .menu li {
+  display: flex;
+  align-items: center;
   border: 1px solid #DDDDDD;
   display: flex;
   border-radius: 5px;
   width: 580px;
   height: 200px;
+  background-color: white;
 }
 
 
 .menu .image {
-  width: 120px;
-  height: 120px;
+  padding-left: 26px;
+}
+
+.menu .row {
+  padding-left: 30px;
 }
 
 .menu .name {
   display: flex;
-  justify-content: space-between;
+  padding-bottom: 6px;
 }
-
 
 .menu h5 {
   font-family: var(--serif);
   font-size: 18px;
   color: var(--weak-color);
+  margin: 0;
+  padding-right: 157px;
 }
-
 
 .menu h6 {
   font-family: var(--serif);
   font-size: 15px;
   color: var(--accent-color);
+  margin: 0;
+}
+
+.menu p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #546285;
+  margin: 0;
+  text-align: left;
+  max-width: 351px;
+  padding-bottom: 8px;
 }
 
 .menu .form {
@@ -312,6 +363,7 @@ header li:hover {
   height: 45px;
   width: 60px;
   border-radius: 6px;
+  border: 1px solid grey;
 }
 
 .menu li button {
@@ -319,9 +371,38 @@ header li:hover {
   background-color: #35B8BE;
   color: black;
   border-radius: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0;
 }
 
+.menu li button:hover {
+  background-color: #1B9097;
+  color: white;
+}
 
+.menu .see {
+  width: 186px;
+  height: 60px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 5px;
+  margin-top: 45px;
+}
+
+.menu .see:hover {
+  color: var(--color);
+
+}
 
 .row li {
   width: 580px;
@@ -384,6 +465,10 @@ header li:hover {
   color: white;
 }
 
+.faq button:hover {
+  color: var(--color);
+}
+
 .phone {
   width: 1440px;
   margin: auto;
@@ -437,6 +522,10 @@ header li:hover {
   color: white;
 }
 
+.phone button:hover {
+  color: var(--color);
+}
+
 
 .finish {
   width: 1354px;
@@ -461,7 +550,7 @@ header li:hover {
 .finish .column {
   height: 666px;
   width: 640px;
-  margin-left: 743px;
+  margin-left: 643px;
 }
 
 .finish h3 {
@@ -471,7 +560,9 @@ header li:hover {
   font-size: 51px;
   line-height: 60px;
   color: white;
-  max-width: 490px;
+  margin: 0;
+  padding-top: 212px;
+  padding-bottom: 51px;
 }
 
 .finish h3 span {
@@ -489,7 +580,10 @@ header li:hover {
   border-radius: 6px;
   color: var(--accent-color);
   margin: auto;
+}
 
+.finish button:hover {
+  color: var(--color);
 }
 
 footer {
@@ -545,6 +639,10 @@ footer .column h4 {
   margin: 0;
 }
 
+footer .column p:hover {
+  color: var(--color);
+}
+
 footer hr {
   margin: 0;
   border: 0;
@@ -566,10 +664,6 @@ footer hr {
   line-height: 20px;
   max-width: 291px;
   padding-top: 71px;
-}
-
-.networks p span {
-  color: #35B8BE;
 }
 
 .network {
